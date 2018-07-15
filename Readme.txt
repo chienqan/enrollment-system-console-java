@@ -66,3 +66,20 @@ List<String> menus = new ArrayList<>();
 + Java 8: Lamda expression
 ProgramMessage repeatMessage = (message) -> message;
 ProgramMessage invalidMessage = (message) -> "Invalid " + message;
+
++ Java 9: List interfaces have “of()” methods
+
+Because currently, most intellij idea support java 8, so it may be not convenient to switch to java 9,
+I will describe what is new feature of java 1.9 that List interfaces have of() method to create empty
+or no-empty immutable List object
+
+As java 8:
+List<String> menus = new ArrayList<>();
+menus.add("To use this system, there is a list option below");
+menus.add("1) Create");
+menus.add("2) Read");
+menus.add("3) Update");
+menus.add("4) Delete");
+
+Transform to java 9:
+List<String> menus = List.of("To use this system, there is a list option below", "1) Create", "2) Read", "3) Update", "4) Delete");
