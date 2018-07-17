@@ -3,7 +3,7 @@ The main program placed in side com.company folder with Main.java file
 
 # Design patterns
 
-I have seperated design pattern to each package with the exactly name
+Seperating design pattern to each package with the exactly name
 
 + builder
 This builder pattern to create data for student and course
@@ -62,7 +62,7 @@ ProgramMessage invalidMessage = (message) -> "Invalid " + message;
 + Java 9: List interfaces have “of()” methods
 
 Because currently, most intellij idea support java 8, so it may be not convenient to switch to java 9,
-I will describe what is new feature of java 1.9 that List interfaces have of() method to create empty
+this describe the new feature of java 1.9 that List interfaces have of() method to create empty
 or no-empty immutable List object
 
 As java 8:
